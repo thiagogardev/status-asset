@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status · Asset Tecnologia</title>
+<meta name="description" content="Disponibilidade dos sistemas Clinalta, Escrituro e Citacerta, do atendimento por WhatsApp e dos sites da Asset Tecnologia, verificada a cada 10 minutos.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --fundo: #f6f7f8; --cartao: #ffffff; --texto: #0a0a0a; --suave: #5b6470; --linha: #e3e6ea;
+  --acento: #1c3d5a; --ok: #16a34a; --lento: #d97706; --fora: #dc2626; --vazio: #e5e7eb;
+  --ok-fundo: #ecfdf3; --fora-fundo: #fef2f2; --lento-fundo: #fffbeb;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fundo: #0b0d10; --cartao: #12161b; --texto: #eef1f4; --suave: #9aa4b0; --linha: #232a32;
+    --acento: #8fb4d6; --ok: #22c55e; --lento: #f59e0b; --fora: #f87171; --vazio: #2a313a;
+    --ok-fundo: #0f2a1a; --fora-fundo: #2e1414; --lento-fundo: #2e2410;
+  }
+}
+:root[data-theme="dark"] {
+  --fundo: #0b0d10; --cartao: #12161b; --texto: #eef1f4; --suave: #9aa4b0; --linha: #232a32;
+  --acento: #8fb4d6; --ok: #22c55e; --lento: #f59e0b; --fora: #f87171; --vazio: #2a313a;
+  --ok-fundo: #0f2a1a; --fora-fundo: #2e1414; --lento-fundo: #2e2410;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 400 15px/1.55 "IBM Plex Sans", system-ui, sans-serif; }
+.envelope { max-width: 880px; margin: 0 auto; padding: 32px 16px 48px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+header img { width: 34px; height: 38px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) header img { filter: invert(1); } }
+:root[data-theme="dark"] header img { filter: invert(1); }
+.marca { font: 700 20px/1.1 "Exo 2", sans-serif; letter-spacing: .01em; }
+.marca span { display: block; font: 500 12px/1.3 "IBM Plex Sans", sans-serif; color: var(--suave); letter-spacing: .08em; text-transform: uppercase; }
+.faixa { border-radius: 14px; padding: 18px 20px; display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 17px; border: 1px solid var(--linha); background: var(--cartao); }
+.faixa.ok { background: var(--ok-fundo); border-color: transparent; }
+.faixa.fora { background: var(--fora-fundo); border-color: transparent; }
+.faixa.lento { background: var(--lento-fundo); border-color: transparent; }
+.ponto { width: 12px; height: 12px; border-radius: 50%; flex: none; background: var(--vazio); }
+.ponto.ok { background: var(--ok); } .ponto.lento { background: var(--lento); } .ponto.fora { background: var(--fora); }
+.atualizado { color: var(--suave); font-size: 13px; margin: 10px 2px 0; }
+h2 { font: 700 13px/1.3 "Exo 2", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--suave); margin: 34px 0 10px; }
+.grupo { background: var(--cartao); border: 1px solid var(--linha); border-radius: 14px; overflow: hidden; }
+.servico { padding: 16px 18px; border-top: 1px solid var(--linha); }
+.servico:first-child { border-top: 0; }
+.linha1 { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.nome { font-weight: 600; }
+.detalhe { color: var(--suave); font-size: 13px; }
+.situacao { font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.situacao.ok { color: var(--ok); } .situacao.lento { color: var(--lento); } .situacao.fora { color: var(--fora); } .situacao.sem { color: var(--suave); }
+.barras { display: flex; gap: 2px; margin-top: 12px; height: 30px; }
+.barras i { flex: 1; border-radius: 2px; background: var(--vazio); min-width: 2px; }
+.barras i.ok { background: var(--ok); } .barras i.lento { background: var(--lento); } .barras i.fora { background: var(--fora); }
+.legenda { display: flex; justify-content: space-between; text-align: center; color: var(--suave); font: 400 12px/1.4 "IBM Plex Mono", monospace; margin-top: 6px; gap: 8px; }
+.legenda span:first-child, .legenda span:last-child { white-space: nowrap; }
+.incidentes { background: var(--cartao); border: 1px solid var(--linha); border-radius: 14px; padding: 4px 18px; }
+.incidente { padding: 12px 0; border-top: 1px solid var(--linha); font-size: 14px; }
+.incidente:first-child { border-top: 0; }
+.incidente b { font-weight: 600; }
+.incidente .quando { color: var(--suave); font-size: 13px; }
+.vazio { color: var(--suave); padding: 14px 0; font-size: 14px; }
+footer { margin-top: 36px; color: var(--suave); font-size: 13px; }
+footer a { color: var(--acento); }
+.erro { color: var(--fora); }
+</style>
+</head>
+<body>
+<div class="envelope">
+  <header>
+    <img src="favicon.svg" alt="" width="34" height="38">
+    <div class="marca">Asset Tecnologia<span>Status dos serviços</span></div>
+  </header>
+
+  <div id="faixa" class="faixa"><span class="ponto"></span><span id="faixa-texto">Carregando a situação dos serviços...</span></div>
+  <p id="atualizado" class="atualizado"></p>
+
+  <div id="grupos"></div>
+
+  <h2>Incidentes dos últimos 90 dias</h2>
+  <div id="incidentes" class="incidentes"><p class="vazio">Carregando...</p></div>
+
+  <footer>
+    <p>Cada serviço é verificado a cada 10 minutos de fora dos nossos servidores (pelo GitHub), para que esta página continue no ar mesmo se eles caírem. Um serviço conta como fora do ar quando não responde em 15 segundos ou responde com erro, duas vezes seguidas.</p>
+    <p>Precisa de ajuda? Fale com o suporte pelo WhatsApp <a href="https://wa.me/5511963040000">(11) 96304-0000</a> ou por <a href="mailto:contato@assettecnologia.com.br">contato@assettecnologia.com.br</a>. <a href="https://assettecnologia.com.br/">assettecnologia.com.br</a></p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  // Os dados ficam no ramo "dados" (atualizado pelo verificador sem reconstruir a página). Em teste local, a pasta dados/.
+  const BASE = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? "dados/" : "https://raw.githubusercontent.com/thiagogardev/status-asset/dados/";
+  // No celular cabem 30 barras; na tela larga, 90.
+  const diasNaTela = () => (window.innerWidth < 640 ? 30 : 90);
+  const fmtHora = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  const fmtDia = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" });
+  const diaSP = (d) => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo" }).format(d);
+  const el = (tag, cls, texto) => { const e = document.createElement(tag); if (cls) e.className = cls; if (texto !== undefined) e.textContent = texto; return e; };
+  const NOME = { ok: "Funcionando", lento: "Lento", fora: "Fora do ar", sem: "Sem dados" };
+
+  function duracao(ms) {
+    const min = Math.max(1, Math.round(ms / 60000));
+    if (min < 60) return `${min} min`;
+    const h = Math.floor(min / 60), m = min % 60;
+    return m ? `${h} h ${m} min` : `${h} h`;
+  }
+  function pct(ok, total) {
+    if (!total) return null;
+    const p = (ok / total) * 100;
+    return p === 100 ? "100%" : `${p.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`;
+  }
+
+  async function carregar(nome) {
+    const r = await fetch(`${BASE}${nome}?t=${Math.floor(Date.now() / 60000)}`, { cache: "no-store" });
+    if (!r.ok) throw new Error(`${nome}: HTTP ${r.status}`);
+    return r.json();
+  }
+
+  async function montar() {
+    const [config, estado, diario, incidentes] = await Promise.all([fetch("servicos.json", { cache: "no-store" }).then((r) => r.json()), carregar("estado.json"), carregar("diario.json"), carregar("incidentes.json")]);
+    const servicos = config.grupos.flatMap((g) => g.servicos);
+    const sit = (id) => estado.servicos?.[id]?.situacao ?? "sem";
+
+    // Faixa geral
+    const foraLista = servicos.filter((s) => sit(s.id) === "fora");
+    const lentos = servicos.filter((s) => sit(s.id) === "lento");
+    const faixa = document.getElementById("faixa");
+    const geral = foraLista.length ? "fora" : lentos.length ? "lento" : "ok";
+    faixa.className = `faixa ${geral}`;
+    faixa.querySelector(".ponto").className = `ponto ${geral}`;
+    document.getElementById("faixa-texto").textContent = foraLista.length
+      ? `Fora do ar agora: ${foraLista.map((s) => s.nome).join(", ")}`
+      : lentos.length ? `Funcionando, com lentidão em: ${lentos.map((s) => s.nome).join(", ")}` : "Todos os serviços funcionando";
+    const atual = estado.atualizadoEm ? new Date(estado.atualizadoEm) : null;
+    const atraso = atual ? Date.now() - atual.getTime() : Infinity;
+    document.getElementById("atualizado").textContent = atual
+      ? `Última verificação em ${fmtHora.format(atual)}${atraso > 45 * 60000 ? ". A verificação está atrasada; a situação pode ter mudado." : "."}`
+      : "";
+
+    // Dias mostrados: os últimos 90, do mais antigo ao de hoje
+    const dias = [];
+    const DIAS = diasNaTela();
+    for (let i = DIAS - 1; i >= 0; i--) dias.push(diaSP(new Date(Date.now() - i * 86400000)));
+
+    const grupos = document.getElementById("grupos");
+    grupos.textContent = "";
+    for (const g of config.grupos) {
+      grupos.append(el("h2", "", g.nome));
+      const caixa = el("div", "grupo");
+      for (const s of g.servicos) {
+        const linha = el("div", "servico");
+        const l1 = el("div", "linha1");
+        const esq = el("div");
+        esq.append(el("div", "nome", s.nome));
+        if (s.detalhe) esq.append(el("div", "detalhe", s.detalhe));
+        const st = sit(s.id);
+        const etq = el("span", `situacao ${st}`);
+        etq.append(el("span", `ponto ${st}`), el("span", "", NOME[st]));
+        l1.append(esq, etq);
+        linha.append(l1);
+
+        const barras = el("div", "barras");
+        let okT = 0, totT = 0, somaMs = 0, okMs = 0;
+        for (const d of dias) {
+          const v = diario.dias?.[d]?.[s.id];
+          const b = el("i");
+          if (v && v[1]) {
+            const [ok, total, ms] = v;
+            okT += ok; totT += total; somaMs += ms; okMs += ok;
+            const p = ok / total;
+            b.className = p >= 0.995 ? "ok" : p >= 0.95 ? "lento" : "fora";
+            b.title = `${fmtDia.format(new Date(d + "T12:00:00-03:00"))}: ${pct(ok, total)} no ar (${ok} de ${total} verificações)`;
+          } else {
+            b.title = `${fmtDia.format(new Date(d + "T12:00:00-03:00"))}: sem dados`;
+          }
+          barras.append(b);
+        }
+        linha.append(barras);
+        const leg = el("div", "legenda");
+        const media = okMs ? Math.round(somaMs / okMs) : null;
+        leg.append(el("span", "", `${DIAS} dias`), el("span", "", `${pct(okT, totT) ?? "sem dados"} no ar${media ? ` · resposta média ${media} ms` : ""}`), el("span", "", "hoje"));
+        linha.append(leg);
+        caixa.append(linha);
+      }
+      grupos.append(caixa);
+    }
+
+    // Incidentes
+    const lista = document.getElementById("incidentes");
+    lista.textContent = "";
+    if (!incidentes.length) {
+      lista.append(el("p", "vazio", "Nenhum incidente nos últimos 90 dias."));
+    } else {
+      for (const i of incidentes) {
+        const item = el("div", "incidente");
+        const ini = new Date(i.inicio);
+        const titulo = el("div");
+        titulo.append(el("b", "", i.nome), document.createTextNode(i.fim ? ` ficou fora do ar por ${duracao(new Date(i.fim) - ini)}` : " está fora do ar"));
+        const quando = el("div", "quando", i.fim ? `De ${fmtHora.format(ini)} a ${fmtHora.format(new Date(i.fim))}. Motivo visto: ${i.erro}.` : `Desde ${fmtHora.format(ini)}. Motivo visto: ${i.erro}. Estamos trabalhando nisso.`);
+        item.append(titulo, quando);
+        lista.append(item);
+      }
+    }
+  }
+
+  montar().catch((e) => {
+    document.getElementById("faixa-texto").textContent = "Não foi possível carregar a situação agora. Tente de novo em alguns minutos.";
+    document.getElementById("incidentes").textContent = "";
+    console.error(e);
+  });
+  setInterval(() => montar().catch(() => {}), 5 * 60000);
+  let largura = diasNaTela();
+  addEventListener("resize", () => { if (diasNaTela() !== largura) { largura = diasNaTela(); montar().catch(() => {}); } });
+})();
+</script>
+</body>
+</html>

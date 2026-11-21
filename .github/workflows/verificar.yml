@@ -1,0 +1,53 @@
+# Verifica os serviços a cada 10 minutos e publica os dados no ramo "dados" (só o último estado,
+# num commit único), que a página lê. Serviço que cai termina o job com erro: o GitHub avisa por
+# e-mail. Com o segredo HC_URL, o Healthchecks.io também avisa (e avisa se o verificador parar).
+name: Verificar
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verificar
+  cancel-in-progress: false
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dados anteriores
+        run: |
+          if git fetch --depth=1 origin dados 2>/dev/null; then
+            git worktree add --detach dados FETCH_HEAD
+          else
+            mkdir -p dados
+          fi
+
+      - name: Verificar os serviços
+        id: verificar
+        env:
+          HC_URL: ${{ secrets.HC_URL }}
+        run: node verificar.mjs dados || echo "codigo=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Publicar os dados
+        run: |
+          mkdir -p /tmp/publicar
+          cp dados/*.json /tmp/publicar/
+          cd /tmp/publicar
+          git init -q -b dados
+          git add .
+          git -c user.name="status-asset" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "Dados de $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" dados
+
+      - name: Avisar queda
+        if: steps.verificar.outputs.codigo != ''
+        run: |
+          echo "::error::Serviço fora do ar ou erro no verificador (código ${{ steps.verificar.outputs.codigo }}). Veja o passo Verificar os serviços."
+          exit 1

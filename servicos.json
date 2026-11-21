@@ -1,0 +1,24 @@
+{
+  "intervaloMinutos": 10,
+  "grupos": [
+    {
+      "nome": "Sistemas",
+      "servicos": [
+        { "id": "clinalta", "nome": "Clinalta", "detalhe": "Sistema de clínicas e consultórios", "url": "https://app.clinalta.com.br/api/health", "espera": "ok" },
+        { "id": "clinalta-video", "nome": "Clinalta Teleconsulta", "detalhe": "Vídeo da teleconsulta", "url": "https://video.clinalta.com.br/", "espera": "OK" },
+        { "id": "escrituro", "nome": "Escrituro", "detalhe": "Sistema de escritórios de contabilidade", "url": "https://app.escrituro.com.br/api/health", "espera": "ok" },
+        { "id": "citacerta", "nome": "Citacerta", "detalhe": "IA para advogados", "url": "https://app.citacerta.com.br/api/health", "espera": "ok" },
+        { "id": "atendimento", "nome": "Atendimento por WhatsApp", "detalhe": "Suporte e avisos pelo WhatsApp (96304-0000)", "url": "https://atendimento.assetconsulting.com.br/api/health", "espera": "\"ok\":true" }
+      ]
+    },
+    {
+      "nome": "Sites",
+      "servicos": [
+        { "id": "site-clinalta", "nome": "clinalta.com.br", "url": "https://clinalta.com.br/", "espera": "Clinalta" },
+        { "id": "site-escrituro", "nome": "escrituro.com.br", "url": "https://escrituro.com.br/", "espera": "Escrituro" },
+        { "id": "site-citacerta", "nome": "citacerta.com.br", "url": "https://citacerta.com.br/", "espera": "Citacerta" },
+        { "id": "site-asset", "nome": "assettecnologia.com.br", "url": "https://assettecnologia.com.br/", "espera": "Asset" }
+      ]
+    }
+  ]
+}
