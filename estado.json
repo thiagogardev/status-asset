@@ -1,0 +1,60 @@
+{
+ "servicos": {
+  "clinalta": {
+   "situacao": "ok",
+   "ms": 910,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "clinalta-video": {
+   "situacao": "ok",
+   "ms": 772,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "escrituro": {
+   "situacao": "ok",
+   "ms": 909,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "citacerta": {
+   "situacao": "ok",
+   "ms": 913,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "atendimento": {
+   "situacao": "ok",
+   "ms": 1088,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "site-clinalta": {
+   "situacao": "ok",
+   "ms": 1606,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "site-escrituro": {
+   "situacao": "ok",
+   "ms": 1778,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "site-citacerta": {
+   "situacao": "ok",
+   "ms": 1435,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  },
+  "site-asset": {
+   "situacao": "ok",
+   "ms": 1589,
+   "erro": null,
+   "desde": "2026-11-21T00:05:20.852Z"
+  }
+ },
+ "atualizadoEm": "2026-11-28T03:34:52.095Z",
+ "intervaloMinutos": 10
+}

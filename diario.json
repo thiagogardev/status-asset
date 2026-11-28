@@ -1,0 +1,427 @@
+{
+ "dias": {
+  "2026-11-20": {
+   "clinalta": [
+    3,
+    3,
+    2337
+   ],
+   "clinalta-video": [
+    3,
+    3,
+    1899
+   ],
+   "escrituro": [
+    3,
+    3,
+    2157
+   ],
+   "citacerta": [
+    3,
+    3,
+    2314
+   ],
+   "atendimento": [
+    3,
+    3,
+    2650
+   ],
+   "site-clinalta": [
+    3,
+    3,
+    3538
+   ],
+   "site-escrituro": [
+    3,
+    3,
+    4229
+   ],
+   "site-citacerta": [
+    3,
+    3,
+    3406
+   ],
+   "site-asset": [
+    3,
+    3,
+    3760
+   ]
+  },
+  "2026-11-21": {
+   "clinalta": [
+    4,
+    4,
+    2836
+   ],
+   "clinalta-video": [
+    4,
+    4,
+    2470
+   ],
+   "escrituro": [
+    4,
+    4,
+    2882
+   ],
+   "citacerta": [
+    4,
+    4,
+    3079
+   ],
+   "atendimento": [
+    4,
+    4,
+    3417
+   ],
+   "site-clinalta": [
+    4,
+    4,
+    4584
+   ],
+   "site-escrituro": [
+    4,
+    4,
+    5475
+   ],
+   "site-citacerta": [
+    4,
+    4,
+    4413
+   ],
+   "site-asset": [
+    4,
+    4,
+    4860
+   ]
+  },
+  "2026-11-22": {
+   "clinalta": [
+    4,
+    4,
+    3884
+   ],
+   "clinalta-video": [
+    4,
+    4,
+    3013
+   ],
+   "escrituro": [
+    4,
+    4,
+    3472
+   ],
+   "citacerta": [
+    4,
+    4,
+    3644
+   ],
+   "atendimento": [
+    4,
+    4,
+    4272
+   ],
+   "site-clinalta": [
+    4,
+    4,
+    5382
+   ],
+   "site-escrituro": [
+    4,
+    4,
+    6496
+   ],
+   "site-citacerta": [
+    4,
+    4,
+    5367
+   ],
+   "site-asset": [
+    4,
+    4,
+    5692
+   ]
+  },
+  "2026-11-23": {
+   "clinalta": [
+    2,
+    2,
+    1612
+   ],
+   "clinalta-video": [
+    2,
+    2,
+    1291
+   ],
+   "escrituro": [
+    2,
+    2,
+    1440
+   ],
+   "citacerta": [
+    2,
+    2,
+    1444
+   ],
+   "atendimento": [
+    2,
+    2,
+    1643
+   ],
+   "site-clinalta": [
+    2,
+    2,
+    2271
+   ],
+   "site-escrituro": [
+    2,
+    2,
+    2784
+   ],
+   "site-citacerta": [
+    2,
+    2,
+    2231
+   ],
+   "site-asset": [
+    2,
+    2,
+    2318
+   ]
+  },
+  "2026-11-24": {
+   "clinalta": [
+    3,
+    3,
+    2575
+   ],
+   "clinalta-video": [
+    3,
+    3,
+    7758
+   ],
+   "escrituro": [
+    3,
+    3,
+    3352
+   ],
+   "citacerta": [
+    3,
+    3,
+    2941
+   ],
+   "atendimento": [
+    3,
+    3,
+    4235
+   ],
+   "site-clinalta": [
+    3,
+    3,
+    3776
+   ],
+   "site-escrituro": [
+    3,
+    3,
+    4741
+   ],
+   "site-citacerta": [
+    3,
+    3,
+    3502
+   ],
+   "site-asset": [
+    3,
+    3,
+    3797
+   ]
+  },
+  "2026-11-25": {
+   "clinalta": [
+    3,
+    3,
+    2244
+   ],
+   "clinalta-video": [
+    3,
+    3,
+    1958
+   ],
+   "escrituro": [
+    3,
+    3,
+    2065
+   ],
+   "citacerta": [
+    3,
+    3,
+    2252
+   ],
+   "atendimento": [
+    3,
+    3,
+    2487
+   ],
+   "site-clinalta": [
+    3,
+    3,
+    3874
+   ],
+   "site-escrituro": [
+    3,
+    3,
+    4013
+   ],
+   "site-citacerta": [
+    3,
+    3,
+    3294
+   ],
+   "site-asset": [
+    3,
+    3,
+    3617
+   ]
+  },
+  "2026-11-26": {
+   "clinalta": [
+    2,
+    2,
+    1772
+   ],
+   "clinalta-video": [
+    2,
+    2,
+    1384
+   ],
+   "escrituro": [
+    2,
+    2,
+    1612
+   ],
+   "citacerta": [
+    2,
+    2,
+    1662
+   ],
+   "atendimento": [
+    2,
+    2,
+    1980
+   ],
+   "site-clinalta": [
+    2,
+    2,
+    2890
+   ],
+   "site-escrituro": [
+    2,
+    2,
+    3096
+   ],
+   "site-citacerta": [
+    2,
+    2,
+    2504
+   ],
+   "site-asset": [
+    2,
+    2,
+    2792
+   ]
+  },
+  "2026-11-27": {
+   "clinalta": [
+    3,
+    3,
+    3272
+   ],
+   "clinalta-video": [
+    3,
+    3,
+    2466
+   ],
+   "escrituro": [
+    3,
+    3,
+    2805
+   ],
+   "citacerta": [
+    3,
+    3,
+    2978
+   ],
+   "atendimento": [
+    3,
+    3,
+    3138
+   ],
+   "site-clinalta": [
+    3,
+    3,
+    4478
+   ],
+   "site-escrituro": [
+    3,
+    3,
+    4971
+   ],
+   "site-citacerta": [
+    3,
+    3,
+    4045
+   ],
+   "site-asset": [
+    3,
+    3,
+    4184
+   ]
+  },
+  "2026-11-28": {
+   "clinalta": [
+    1,
+    1,
+    910
+   ],
+   "clinalta-video": [
+    1,
+    1,
+    772
+   ],
+   "escrituro": [
+    1,
+    1,
+    909
+   ],
+   "citacerta": [
+    1,
+    1,
+    913
+   ],
+   "atendimento": [
+    1,
+    1,
+    1088
+   ],
+   "site-clinalta": [
+    1,
+    1,
+    1606
+   ],
+   "site-escrituro": [
+    1,
+    1,
+    1778
+   ],
+   "site-citacerta": [
+    1,
+    1,
+    1435
+   ],
+   "site-asset": [
+    1,
+    1,
+    1589
+   ]
+  }
+ }
+}

@@ -1,0 +1,352 @@
+[
+ {
+  "t": "2026-11-21T00:05:20.852Z",
+  "r": {
+   "clinalta": 662,
+   "clinalta-video": 555,
+   "escrituro": 604,
+   "citacerta": 673,
+   "atendimento": 699,
+   "site-clinalta": 973,
+   "site-escrituro": 1157,
+   "site-citacerta": 977,
+   "site-asset": 1044
+  }
+ },
+ {
+  "t": "2026-11-21T00:12:07.158Z",
+  "r": {
+   "clinalta": 905,
+   "clinalta-video": 676,
+   "escrituro": 726,
+   "citacerta": 806,
+   "atendimento": 952,
+   "site-clinalta": 1257,
+   "site-escrituro": 1445,
+   "site-citacerta": 1104,
+   "site-asset": 1263
+  }
+ },
+ {
+  "t": "2026-11-21T00:19:55.443Z",
+  "r": {
+   "clinalta": 770,
+   "clinalta-video": 668,
+   "escrituro": 827,
+   "citacerta": 835,
+   "atendimento": 999,
+   "site-clinalta": 1308,
+   "site-escrituro": 1627,
+   "site-citacerta": 1325,
+   "site-asset": 1453
+  }
+ },
+ {
+  "t": "2026-11-21T06:57:53.959Z",
+  "r": {
+   "clinalta": 714,
+   "clinalta-video": 689,
+   "escrituro": 821,
+   "citacerta": 901,
+   "atendimento": 976,
+   "site-clinalta": 1374,
+   "site-escrituro": 1594,
+   "site-citacerta": 1379,
+   "site-asset": 1443
+  }
+ },
+ {
+  "t": "2026-11-21T15:13:48.821Z",
+  "r": {
+   "clinalta": 654,
+   "clinalta-video": 506,
+   "escrituro": 543,
+   "citacerta": 620,
+   "atendimento": 636,
+   "site-clinalta": 842,
+   "site-escrituro": 1013,
+   "site-citacerta": 750,
+   "site-asset": 853
+  }
+ },
+ {
+  "t": "2026-11-21T20:55:41.830Z",
+  "r": {
+   "clinalta": 838,
+   "clinalta-video": 743,
+   "escrituro": 891,
+   "citacerta": 894,
+   "atendimento": 1051,
+   "site-clinalta": 1370,
+   "site-escrituro": 1652,
+   "site-citacerta": 1324,
+   "site-asset": 1484
+  }
+ },
+ {
+  "t": "2026-11-22T00:59:20.191Z",
+  "r": {
+   "clinalta": 630,
+   "clinalta-video": 532,
+   "escrituro": 627,
+   "citacerta": 664,
+   "atendimento": 754,
+   "site-clinalta": 998,
+   "site-escrituro": 1216,
+   "site-citacerta": 960,
+   "site-asset": 1080
+  }
+ },
+ {
+  "t": "2026-11-22T07:55:36.114Z",
+  "r": {
+   "clinalta": 1015,
+   "clinalta-video": 764,
+   "escrituro": 916,
+   "citacerta": 910,
+   "atendimento": 991,
+   "site-clinalta": 1408,
+   "site-escrituro": 1679,
+   "site-citacerta": 1302,
+   "site-asset": 1450
+  }
+ },
+ {
+  "t": "2026-11-22T15:57:43.942Z",
+  "r": {
+   "clinalta": 1061,
+   "clinalta-video": 769,
+   "escrituro": 819,
+   "citacerta": 911,
+   "atendimento": 1138,
+   "site-clinalta": 1372,
+   "site-escrituro": 1650,
+   "site-citacerta": 1453,
+   "site-asset": 1493
+  }
+ },
+ {
+  "t": "2026-11-22T21:38:23.532Z",
+  "r": {
+   "clinalta": 997,
+   "clinalta-video": 750,
+   "escrituro": 924,
+   "citacerta": 925,
+   "atendimento": 1081,
+   "site-clinalta": 1239,
+   "site-escrituro": 1556,
+   "site-citacerta": 1307,
+   "site-asset": 1291
+  }
+ },
+ {
+  "t": "2026-11-23T01:58:10.864Z",
+  "r": {
+   "clinalta": 811,
+   "clinalta-video": 730,
+   "escrituro": 813,
+   "citacerta": 898,
+   "atendimento": 1062,
+   "site-clinalta": 1363,
+   "site-escrituro": 1611,
+   "site-citacerta": 1305,
+   "site-asset": 1458
+  }
+ },
+ {
+  "t": "2026-11-23T10:35:34.467Z",
+  "r": {
+   "clinalta": 961,
+   "clinalta-video": 692,
+   "escrituro": 691,
+   "citacerta": 692,
+   "atendimento": 703,
+   "site-clinalta": 1086,
+   "site-escrituro": 1293,
+   "site-citacerta": 924,
+   "site-asset": 945
+  }
+ },
+ {
+  "t": "2026-11-23T22:13:33.193Z",
+  "r": {
+   "clinalta": 651,
+   "clinalta-video": 599,
+   "escrituro": 749,
+   "citacerta": 752,
+   "atendimento": 940,
+   "site-clinalta": 1185,
+   "site-escrituro": 1491,
+   "site-citacerta": 1307,
+   "site-asset": 1373
+  }
+ },
+ {
+  "t": "2026-11-24T06:08:55.894Z",
+  "r": {
+   "clinalta": 955,
+   "clinalta-video": 722,
+   "escrituro": 722,
+   "citacerta": 722,
+   "atendimento": 729,
+   "site-clinalta": 1107,
+   "site-escrituro": 1333,
+   "site-citacerta": 960,
+   "site-asset": 967
+  }
+ },
+ {
+  "t": "2026-11-24T17:38:53.822Z",
+  "r": {
+   "clinalta": 736,
+   "clinalta-video": 683,
+   "escrituro": 841,
+   "citacerta": 840,
+   "atendimento": 1009,
+   "site-clinalta": 1311,
+   "site-escrituro": 1643,
+   "site-citacerta": 1341,
+   "site-asset": 1506
+  }
+ },
+ {
+  "t": "2026-11-25T01:36:22.555Z",
+  "r": {
+   "clinalta": 884,
+   "clinalta-video": 6353,
+   "escrituro": 1789,
+   "citacerta": 1379,
+   "atendimento": 2497,
+   "site-clinalta": 1358,
+   "site-escrituro": 1765,
+   "site-citacerta": 1201,
+   "site-asset": 1324
+  }
+ },
+ {
+  "t": "2026-11-25T10:28:34.803Z",
+  "r": {
+   "clinalta": 680,
+   "clinalta-video": 620,
+   "escrituro": 771,
+   "citacerta": 778,
+   "atendimento": 914,
+   "site-clinalta": 1331,
+   "site-escrituro": 1454,
+   "site-citacerta": 1184,
+   "site-asset": 1295
+  }
+ },
+ {
+  "t": "2026-11-25T20:05:58.430Z",
+  "r": {
+   "clinalta": 817,
+   "clinalta-video": 698,
+   "escrituro": 727,
+   "citacerta": 825,
+   "atendimento": 886,
+   "site-clinalta": 1443,
+   "site-escrituro": 1411,
+   "site-citacerta": 1174,
+   "site-asset": 1291
+  }
+ },
+ {
+  "t": "2026-11-26T02:47:28.088Z",
+  "r": {
+   "clinalta": 747,
+   "clinalta-video": 640,
+   "escrituro": 567,
+   "citacerta": 649,
+   "atendimento": 687,
+   "site-clinalta": 1100,
+   "site-escrituro": 1148,
+   "site-citacerta": 936,
+   "site-asset": 1031
+  }
+ },
+ {
+  "t": "2026-11-26T11:33:38.064Z",
+  "r": {
+   "clinalta": 854,
+   "clinalta-video": 696,
+   "escrituro": 865,
+   "citacerta": 822,
+   "atendimento": 1021,
+   "site-clinalta": 1492,
+   "site-escrituro": 1623,
+   "site-citacerta": 1311,
+   "site-asset": 1470
+  }
+ },
+ {
+  "t": "2026-11-26T20:30:50.025Z",
+  "r": {
+   "clinalta": 918,
+   "clinalta-video": 688,
+   "escrituro": 747,
+   "citacerta": 840,
+   "atendimento": 959,
+   "site-clinalta": 1398,
+   "site-escrituro": 1473,
+   "site-citacerta": 1193,
+   "site-asset": 1322
+  }
+ },
+ {
+  "t": "2026-11-27T03:15:48.085Z",
+  "r": {
+   "clinalta": 1301,
+   "clinalta-video": 879,
+   "escrituro": 1037,
+   "citacerta": 1046,
+   "atendimento": 1046,
+   "site-clinalta": 1457,
+   "site-escrituro": 1626,
+   "site-citacerta": 1334,
+   "site-asset": 1351
+  }
+ },
+ {
+  "t": "2026-11-27T12:44:38.605Z",
+  "r": {
+   "clinalta": 1182,
+   "clinalta-video": 872,
+   "escrituro": 882,
+   "citacerta": 1046,
+   "atendimento": 1046,
+   "site-clinalta": 1524,
+   "site-escrituro": 1683,
+   "site-citacerta": 1357,
+   "site-asset": 1364
+  }
+ },
+ {
+  "t": "2026-11-27T21:40:24.899Z",
+  "r": {
+   "clinalta": 789,
+   "clinalta-video": 715,
+   "escrituro": 886,
+   "citacerta": 886,
+   "atendimento": 1046,
+   "site-clinalta": 1497,
+   "site-escrituro": 1662,
+   "site-citacerta": 1354,
+   "site-asset": 1469
+  }
+ },
+ {
+  "t": "2026-11-28T03:34:52.095Z",
+  "r": {
+   "clinalta": 910,
+   "clinalta-video": 772,
+   "escrituro": 909,
+   "citacerta": 913,
+   "atendimento": 1088,
+   "site-clinalta": 1606,
+   "site-escrituro": 1778,
+   "site-citacerta": 1435,
+   "site-asset": 1589
+  }
+ }
+]
